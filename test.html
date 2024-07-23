@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+    <link rel="stylesheet" href="./main.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div style="color: red;">
+    Hello,World
+    <h1 style="color: blue;">Welcome to the Rainbow!</h1>
+    <p>To bo or not to be,<br>
+        <strong>that</strong> is a question.
+    </p>
+</div>
+
+<form id="myForm">
+    <div>
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name">
+    </div>
+    
+    <div>
+        <label for="hobbies">興趣:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">閱讀</label>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label for="traveling">旅遊</label>
+        <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+        <label for="cooking">烹飪</label>
+        <div>
+            <label for="country">國家:</label>
+            <select id="country" name="country">
+                <option value="taiwan">台灣</option>
+                <option value="china">中國</option>
+                <option value="japan">日本</option>
+                <option value="usa">美國</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <button type="button" onclick="btn()">提交</button>
+    </div>
+</form>
+    
+<script>
+
+    function btn() {
+        var nameValue = document.getElementById('name').value;
+        console.log(nameValue);
+    }
+</script>
+
+
+<div class="flex_container">
+    <div class="font box box_normal">1</div>
+    <div class="font box box_short">2</div>
+    <div class="font box box_normal">3</div>
+    <div class="font box box_short">4</div>
+    <div class="font box box_long">5</div>
+    <div class="font box box_short">6</div>
+    <div class="font box box_normal">7</div>
+    <div class="font box box_short">8</div>
+    <div class="font box box_long">9</div>
+    <div class="font box box_normal box10">10
+        <div class="popup box box_normal">11</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content-row">
+        <div class="column">
+            <table class="blue-table">
+                <tr>
+                    <td colspan="3">姓名</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>星座</td>
+                    <td>年齡</td>
+                    <td colspan="2">工作</td>
+                </tr>
+                <tr>
+                    <td colspan="2">.col-6</td>
+                    <td colspan="2">.col-6</td>
+                </tr>
+            </table>
+        </div>
+        <div class="column">
+            <table class="green-table">
+                <tr>
+                    <th>#</th>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>handle</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </table>
+        </div>
+        <div class="column">
+            <div class="red-form">
+                <h2>Column 3 - 表單</h2>
+                <form>
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" placeholder="請輸入你的姓名">
+                    
+                    <label for="hairColor">髮色：</label>
+                    <input type="text" id="hairColor" placeholder="請輸入你的髮色">
+                    
+                    <label for="email">電子郵件：</label>
+                    <input type="email" id="email" placeholder="請輸入你的email">
+                    
+                    <button type="submit">提交</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
